@@ -33,7 +33,6 @@
 
 .products-item {
   width: 255px;
-
 }
 
 .product__img-wrapper {
@@ -51,6 +50,10 @@
   display: flex;
   column-gap: 20px;
   background-color: #1C1B1B;
+}
+
+.product__icon-img {
+  cursor: pointer;
 }
 
 .product__name {
@@ -96,6 +99,7 @@
   img {
     width: 13px;
     height: 13px;
+    cursor: pointer;
   }
 
 }
