@@ -1,0 +1,114 @@
+.hero {
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10%;
+  width: 100%;
+  height: calc(100vh - 100px);
+
+}
+
+.hero__content {
+  max-width: 361px;
+}
+.hero__subtitle {
+  padding-top: 206px;
+  margin-bottom: 7px;
+  line-height: 3.75;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: uppercase;
+  color: #2C314B;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 292px;
+    height: 1px;
+    top: 204px;
+    left: -50px;
+    background-color: #6B6C71;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 270px;
+    top: 179px;
+    left: -25px;
+    background-color: #6B6C71;
+
+  }
+
+}
+
+.hero__title {
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #1B1A1A;
+}
+
+.hero__price {
+  margin-bottom: 21px;
+  font-size: 24px;
+  line-height: 2.5;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #121211;
+
+  & span {
+    font-size: 16px;
+    font-family: 'Nunito Sans'; 
+    color: #878787;
+  }
+
+}
+
+.button-link {
+  display: inline-block;
+  padding: 7px 17px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #fff;
+  background-color: #1C1B1B;
+  position: relative;
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: #878787;
+  }
+
+  &:active {
+    top: 1px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('./../img/corner-left.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 9px;
+    height: 9px;
+    top: -8px;
+    left: -8px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url('./../img/corner-right.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 11.6px;
+    height: 10.3px;
+    bottom: -9px;
+    right: -11px;
+  }
+
+}
