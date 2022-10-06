@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
+body {
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+li, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0; }
+
+.nav {
+  background-color: #D3CBC5; }
+
+.nav__row {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav__row .logo {
+    display: flex;
+    align-items: center;
+    column-gap: 5px; }
+  .nav__row span {
+    color: #555555;
+    line-height: 3.75;
+    letter-spacing: 0.035em; }
+
+.logo {
+  width: 31px;
+  height: 35px;
+  object-fit: contain; }
+
+.nav__list {
+  display: flex;
+  column-gap: 40px; }
+  .nav__list a {
+    display: inline-block;
+    font-weight: 300;
+    line-height: 3.75;
+    color: #1B1A1A; }
+    .nav__list a.active-nav-link, .nav__list a:hover, .nav__list a:active {
+      text-decoration: underline; }
+
+.bag {
+  display: flex;
+  column-gap: 25px; }
+
+.bag-icons {
+  position: relative; }
+  .bag-icons::after {
+    content: attr(title);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -3px;
+    right: -2px;
+    width: 8.17px;
+    height: 8.44px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: 'Nunito Sans';
+    font-size: 6px;
+    font-weight: 300;
+    line-height: 1;
+    background-color: #781414; }
+
+/*# sourceMappingURL=main.css.map */
