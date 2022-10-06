@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 body {
-  font-family: Oswald, sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -21,4 +21,37 @@ a {
 img {
   display: block;
   max-width: 100%;
+}
+
+.description {
+  line-height: 3.75;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #9A6437;
+  text-transform: uppercase;
+  padding-left: 65px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 55px;
+    height: 1px;
+    background-color: #9A6437;
+
+  }
+  
+}
+
+.title-h2 {
+  font-size: 42px;
+  line-height: 1.63;
+  color: #1B1A1A;
+  text-transform: uppercase;
+}
+
+.none {
+  display: none;
 }

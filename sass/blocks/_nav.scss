@@ -19,13 +19,14 @@
     line-height: 3.75;
     letter-spacing: 0.035em;
   }
-
 }
 
 .logo {
   width: 31px;
   height: 35px;
   object-fit: contain;
+  font-family: Oswald, sans-serif;
+
 }
 .nav__list {
   display: flex;
@@ -71,7 +72,5 @@
     font-weight: 300;
     line-height: 1;    
     background-color: #781414;
-
-
   }
 }
