@@ -1,6 +1,7 @@
 .clients {
   padding-top: 73px;
   padding-bottom: 82px;
+  margin-bottom: 106px;
   background-image: url('./../img/clients-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,9 +59,16 @@
   column-gap: 30px;
 }
 .clients__item {
+  display: block;
   padding: 0 17px 30px;
   width: 255px;
   background-color: #fff;
+  transform: translateY(0);
+
+}
+
+.clients__item:hover {
+  transform: translateY(-75px);
 }
 
 .clients__wrapper-up {
