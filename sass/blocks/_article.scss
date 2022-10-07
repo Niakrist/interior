@@ -1,0 +1,149 @@
+.article {
+  margin-bottom: 134px;
+}
+
+.article__text {
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description--article {
+  padding-right: 65px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 55px;
+    height: 1px;
+    background-color: #B47139;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+  }
+}
+
+.title--article {
+  text-transform: capitalize;
+}
+
+.article__row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.article__item {
+  max-width: 350px;
+  position: relative;
+}
+
+.article__img-wrapper {
+
+}
+
+.article__date {
+  position: absolute;
+  top: 270px;
+  left: 29px;
+}
+
+.article__date-column {
+  padding: 9px;
+  background-color: #fff;
+  border-bottom: 3px solid #B47139;
+  filter: drop-shadow(0px 1px 7px rgba(0, 0, 0, 0.15));
+}
+
+.day {
+  margin-bottom: 1px;
+  font-size: 17px;
+  color: #000000;
+  line-height: 1;
+}
+
+.mounth {
+  font-size: 12px;
+  color: #000000;
+  line-height: 1;
+}
+
+.article__content-wrapper {
+  padding: 30px 30px 25px 30px;
+  border: 1px solid #ACACAC;
+}
+
+.article__content-row {
+  margin-bottom: 10px;
+  display: flex;
+  column-gap: 50px;
+}
+
+.article__content-name {
+  padding-left: 25px;
+  font-size: 14px;
+  line-height: 2;
+  color: #808080;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-image: url('./../img/avatar.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13.74px;
+    height: 14.72px;
+  }
+
+}
+
+.article__content-comments {
+  padding-left: 25px;
+  font-size: 14px;
+  line-height: 2;
+  color: #808080;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-image: url('./../img/comments.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15.06px;
+    height: 14.13px;
+
+  }
+}
+
+.article__title {
+  margin-bottom: 13px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #2E2D2D;
+}
+
+.white {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+
+  &::before {
+    top: -9px;
+    left: -9px;
+  }
+
+  &::after {
+    bottom: -10px;
+    right: -12px;
+  }
+}
